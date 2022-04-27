@@ -1,0 +1,13 @@
+
+Note:
+This project requires following RPMs and their dependancies on the system.
+libmnl-1.0.3-4.el6.x86_64.rpm
+libmnl-devel-1.0.3-4.el6.x86_64.rpm
+libnetfilter_queue-devel-1.0.2-1.el6.x86_64.rpm
+
+Compilation commands:
+gcc -fPIC -c aal_linux_opensource.c 
+gcc -shared -o an_linux.so aal_linux_opensource.o libnetfilter_queue.a libnfnetlink.a libmnl.a
+
+
+
